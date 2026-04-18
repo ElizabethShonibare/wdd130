@@ -1,0 +1,28 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.trip img {
+    width: 100%;
+}
+
+.cta {
+    text-align: center;
+    background: #e0f7fa;
+    padding: 20px;
+}
+
+.btn {
+    background: #0077b6;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
