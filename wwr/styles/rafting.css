@@ -15,12 +15,11 @@ header {
     border-radius: 1rem;
     background-color: royalblue;
     color: var(--accent2-color);
-    padding: 10px;
+    padding: 15px 25px;
 }
 
 .logo img {
-    width: 120px;
-    height: auto;
+    width: 100px;
 
 }
 
@@ -33,10 +32,10 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    width: 1000px;
-    height: auto;
+    max-width: 1100px;
+    padding: 20px;
     margin: 0 auto;
-    align-content: center;
+    line-height: 1.6;
 }
 
 h1,
@@ -49,12 +48,17 @@ h2 {
 
 .nav a {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: 1px solid black;
     border-radius: 5px;
     background-color: whitesmoke;
     color: black;
     font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background-color: #ddd;
 }
 
 nav,
@@ -65,16 +69,17 @@ article {
     padding: 8px;
 }
 
-.social-media a {
-    text-decoration: none;
+.social-media img {
+    width: 40px;
+    margin-left: 10px;
 }
 
 .hero {
-    border: 2px solid black;
+
     margin-top: 20px;
     text-align: center;
     position: relative;
-    padding: 30px;
+
 }
 
 .hero h1 {
@@ -83,32 +88,40 @@ article {
     font-family: Arial, sans-serif;
 }
 
+.hero h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(38, 70, 83, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
-    margin: 1px;
-    padding: 1px;
+    align-items: center;
+    margin: 30px;
+    padding: 15px 20px;
     background-color: royalblue;
+    color: white;
     box-sizing: border-box;
     border-radius: 1rem;
     border: 1px solid black;
 }
 
 .hero img {
-    display: block;
+
     width: 100%;
-    height: auto;
+    border-radius: 10px;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100px;
-    padding: 16px;
+h1,
+h2 {
+    font-family: var(--heading-font);
     text-align: center;
-    opacity: 0.7;
-    background-color: (var--accent1-color);
-    color: #fff;
+    margin-bottom: 10px;
 }
 
 .grid {
@@ -126,7 +139,33 @@ h1 {
 }
 
 .box {
-    display: block;
-    block-size: auto;
-    align-content: left;
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
 }
