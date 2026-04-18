@@ -107,6 +107,7 @@ footer {
     background-color: royalblue;
     box-sizing: border-box;
     border-radius: 1rem;
+    border: 2px solid black;
 
 }
 
@@ -152,4 +153,8 @@ fieldset {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
+}
+
+.social-media a {
+    text-decoration: none;
 }
