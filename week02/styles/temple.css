@@ -1,6 +1,6 @@
 .card {
     text-align: left;
-    background-color: gray;
+    background-color: #dddddd;
     padding: 20px;
     margin: 20px auto;
     width: 35%;
@@ -13,7 +13,6 @@ li {
 
 .dotted-line {
     border: none;
-    border-top: 2px dotted black;
 }
 
 /* Reset some default styles */
@@ -57,13 +56,13 @@ footer {
 }
 
 .box {
-    text-decoration-color: blueviolet;
     text-align: center;
-    text-size-adjust: 150px;
-    background-color: rgb(97, 92, 92);
+    font-size: large;
+    font-weight: bolder;
+    background-color: #333333;
     padding: 10px;
     width: 500px;
     margin: 20px auto;
-    border: 1px solid black;
+    color: white;
 
 }
