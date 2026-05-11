@@ -1,4 +1,5 @@
 /* 3 March 2026 */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +22,8 @@ body {
 }
 
 nav {
-    background-color: rgb(0, 128, 255);
-    padding: 1rem;
+    background-color: darkblue;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -30,17 +31,17 @@ nav {
 
 nav a {
     display: block;
-    padding: 0.5rem;
+    padding: 20px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: black;
+    color: white;
 
 }
 
 h1 {
     bottom: border;
-    color: black;
+    color: darkblue;
 }
 
 h2 {
@@ -55,35 +56,39 @@ h2 {
 }
 
 main img {
-    width: 80px;
+    width: 150px;
     height: var(--height);
     border: 1px solid black;
-    padding: 1px;
+    padding: 2px;
     box-shadow: 0 0 30px gray;
     margin: 0 0 1rem 1rem;
     float: right;
 }
 
 main {
-    width: 640px;
+    max-width: 840px;
     grid-column: 2;
-    margin: 1rem;
+
 }
 
 aside img {
-    width: 200px;
+    max-width: 200px;
     height: var(--height);
     border: 1px solid black;
-    padding: 1px;
+    padding: 2px;
     box-shadow: 0 0 30px gray;
     margin: 0 0 1rem 1rem;
 }
 
 aside {
-    background: #eee;
+    background-color: #eee;
     text-align: var(--text-align);
     width: 20rem;
+    margin: 1rem;
+    /* border: 1px solid rgb(0 0 0/0.2); */
+    padding: 1rem;
     position: relative;
+    color: #333;
     /* grid-column: 1/2; */
     grid-row: 1;
 
@@ -96,7 +101,7 @@ aside h2 {
 }
 
 p {
-    margin: 1rem;
+    padding: 0;
 }
 
 footer {
@@ -117,7 +122,7 @@ footer {
     background-color: #eee;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    /* border: 1px solid rgba(0, 0, 0, .1); */
 }
 
 header,
@@ -125,8 +130,4 @@ header,
 footer {
     margin: 0 auto;
     max-width: 840px;
-}
-
-.indent {
-    padding-left: 2rem;
 }
