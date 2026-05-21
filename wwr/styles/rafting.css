@@ -7,6 +7,46 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    max-width: 1000px;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: #183263;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -18,32 +58,20 @@ header {
     padding: 15px 25px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
 .logo img {
     width: 100px;
 
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    max-width: 1100px;
-    padding: 20px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    text-align: center;
-    margin: 10px;
 }
 
 .nav a {
@@ -74,11 +102,49 @@ article {
     margin-left: 10px;
 }
 
-.hero {
+.socialmedia a {
+    text-decoration: none;
+}
 
-    margin-top: 20px;
+h1 {
+    position: absolute;
+    top: 10px;
+    width: 95%;
+    padding: 10px;
     text-align: center;
+    color: #fff;
+
+}
+
+article {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    width: 95%;
+    text-align: left;
+    background-color: #345668;
+    color: black;
+}
+
+.hero article img {
+    float: right;
+    top: 10px;
+    width: 125px;
+}
+
+.hero {
     position: relative;
+    width: 840px;
+    height: auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -86,6 +152,7 @@ article {
     margin-bottom: 20px;
     font-size: 28px;
     font-family: Arial, sans-serif;
+
 }
 
 .hero h2 {
@@ -96,32 +163,6 @@ article {
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px;
-    padding: 15px 20px;
-    background-color: royalblue;
-    color: white;
-    box-sizing: border-box;
-    border-radius: 1rem;
-    border: 1px solid black;
-}
-
-.hero img {
-
-    width: 100%;
-    border-radius: 10px;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    text-align: center;
-    margin-bottom: 10px;
 }
 
 .grid {
