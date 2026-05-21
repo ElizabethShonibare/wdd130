@@ -35,7 +35,7 @@ h2 {
     color: var(--primary-color);
     background-color: #183263;
     text-align: center;
-    margin: 10px;
+    border: 10px;
     border: 1px solid black;
 }
 
