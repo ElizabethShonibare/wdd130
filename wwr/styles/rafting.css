@@ -29,13 +29,14 @@ footer {
     max-width: 840px;
 }
 
+h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     background-color: #183263;
     text-align: center;
     border: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 h1 {
@@ -45,7 +46,7 @@ h1 {
     padding: 10px;
     text-align: center;
     color: #fff;
-    /* border-radius: 1rem; */
+    border-radius: 1rem;
 }
 
 nav,
