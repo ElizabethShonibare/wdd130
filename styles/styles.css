@@ -41,7 +41,7 @@ nav a {
 }
 
 h1 {
-    /* bottom: border; */
+    bottom: border;
     color: darkblue;
 }
 
