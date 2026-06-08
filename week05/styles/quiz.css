@@ -5,24 +5,33 @@
 }
 
 body {
-    font-family: serif;
-    font-size: 1.2em;
-    color: black;
+    font-family: Georgia, serif;
+    /* font-size: 1.2em; */
+    /* color: black; */
     background: #fff;
+    margin: 0;
+    padding: 20px;
 }
 
 h1 {
-    margin: 1rem;
-    font-size: 1.5em;
-    text-decoration-color: darkblue;
+    /* margin: 1rem; */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #0e2e98;
     text-align: left;
 }
 
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
 form {
-    width: 800px;
-    height: auto;
+    width: 1000px;
+    height: 900px;
     margin: 0 auto;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 25px;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
     background-color: whitesmoke;
@@ -31,7 +40,7 @@ form {
 
 fieldset {
     display: grid;
-    gap: .5rem;
+    gap: 2.5rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
@@ -44,10 +53,10 @@ label {
 
 footer {
     margin: 1rem auto 0;
-    width: 650px;
+    width: 450px;
     text-align: center;
-    font-size: 0.8em;
-    color: #777;
+    font-size: 15px;
+    color: black;
     border-top: 1px solid #ccc;
 }
 
@@ -56,4 +65,29 @@ select,
 textarea {
     padding: 0.5rem;
     font-size: 1.1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 1px;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.box {
+    padding: 1px solid black;
+    background-color: bisque;
 }
