@@ -7,6 +7,12 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -25,16 +31,10 @@ header {
 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    width: 1000px;
+    max-width: 1000px;
     height: auto;
     margin: 0 auto;
     align-content: center;
@@ -58,6 +58,10 @@ h2 {
     background-color: whitesmoke;
     color: black;
     font-family: Arial, sans-serif;
+}
+
+.nav a:hover {
+    background-color: #7af8de;
 }
 
 nav,
@@ -88,10 +92,10 @@ figure {
     text-align: center;
 }
 
-img {
-    width: 200px;
-    border-radius: 1rem;
-}
+/* img { */
+/* width: 200px; */
+
+/* } */
 
 figcaption {
     margin-top: 10px;
@@ -102,13 +106,13 @@ figcaption {
 footer {
     display: flex;
     justify-content: space-around;
-    margin: 1px;
-    padding: 1px;
+    align-items: center;
+    margin-top: 30px;
+    /* padding: 15px 20px; */
     background-color: royalblue;
     box-sizing: border-box;
     border-radius: 1rem;
-    border: 2px solid black;
-
+    color: white;
 }
 
 form {
