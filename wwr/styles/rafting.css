@@ -15,48 +15,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    max-width: 1000px;
-    height: auto;
-    margin: 0 auto;
-    align-content: center;
-}
-
-/* header, */
-/* main, */
-/* footer { */
-/* max-width: 840px; */
-/* } */
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    background-color: #183263;
-    text-align: var(--text-align);
-    border: 10px;
-}
-
-h1 {
-    position: absolute;
-    top: 10px;
-    width: 95%;
-    padding: 10px;
-    text-align: var(--text-align);
-    color: #fff;
-    border-radius: 1rem;
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -66,6 +24,15 @@ header {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     padding: 15px 25px;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    align-content: center;
 }
 
 footer {
@@ -78,14 +45,45 @@ footer {
     box-sizing: border-box;
     border-radius: 1rem;
     color: white;
-
 }
 
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    text-align: var(--text-align);
+    border: 30px;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    width: 95%;
+    padding: 10px;
+    text-align: var(--text-align);
+    color: #fff;
+    border-radius: 1rem;
+}
+
+/* logo */
 .logo img {
-    width: 100px;
+    width: 120px;
+    border-radius: 1rem;
+    height: auto;
 
 }
 
+/* navigation section */
 .nav a {
     text-decoration: none;
     padding: 10px 15px;
@@ -98,39 +96,7 @@ footer {
 }
 
 .nav a:hover {
-    background-color: #7af8de;
-}
-
-.social-media img {
-    width: 40px;
-    margin-left: 10px;
-}
-
-.socialmedia {
-    text-decoration: none;
-}
-
-.hero article {
-    border: 1px solid black;
-    border-radius: 10px;
-    font-family: var(--body-font);
-    font-weight: bold;
-    position: absolute;
-    bottom: 1px;
-    width: 95%;
-    text-align: left;
-    background-color: #e9c46a;
-    color: black;
-}
-
-.hero article img {
-    float: right;
-    top: 10px;
-    width: 125px;
-}
-
-.indented {
-    margin-left: 400px;
+    background-color: darkmagenta;
 }
 
 /* Hero Section */
@@ -153,11 +119,6 @@ footer {
     margin-bottom: 20px;
     font-size: 28px;
     font-family: Arial, sans-serif;
-
-    /* position: absolute; */
-    /* top: 40%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
 
@@ -167,30 +128,73 @@ footer {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: rgba(38, 70, 83, 0.8);
-    color: white;
+    color: black;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
-.adventure-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: var(--align-items);
-    padding: 15px 25px;
-    background-color: var(--secondary-color);
-    color: white;
-    /* border-radius: 1rem; */
+.hero article {
     border: 1px solid black;
+    border-radius: 10px;
+    font-family: var(--body-font);
+    font-weight: bold;
+    position: absolute;
+    bottom: 1px;
+    width: 95%;
+    text-align: left;
+    background-color: #e9c46a;
+    color: black;
 }
 
-.adventure-items {
-    /* border: 1px solid black; */
-    padding: 20px;
+.hero article img {
+    float: right;
+    top: 10px;
+    width: 125px;
+}
+
+/* figure caption */
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: black;
+}
+
+/* newsletter */
+.newsletter form {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    gap: 1rem;
+    color: black;
     font-size: larger;
-    /* text-align: center; */
+    font-weight: bold;
 }
 
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 2rem;
+    /* background-color: var(--secondary-color); */
+    color: black;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent2-color);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkmagenta;
+}
+
+/* Grid Layout */
 .grid {
     margin: 10px;
     justify-content: center;
@@ -200,100 +204,6 @@ footer {
     font-size: x-large;
 }
 
-.flex {
-    display: flex;
-    justify-content: end;
-}
-
-.box {
-    background: white;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.box2 {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-
-}
-
-figcaption {
-    margin-top: 10px;
-    font-style: italic;
-    color: black;
-}
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    align-items: var(--align-items);
-}
-
-.history img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* .gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-}
-
-.gallery figure {
-    text-align: center;
-    margin: 0;
-}
-
-.gallery img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-.gallery figcaption {
-    margin-top: 5px;
-    font-weight: bold;
-} */
-
-/* Newsletter */
-/* .newsletter { */
-/* text-align: center; */
-/* padding: 2rem; */
-/* } */
-
-.newsletter form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    gap: 0.75rem;
-    color: black;
-}
-
-/* CTA */
-.cta {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
-    color: black;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #005f73;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Grid Layout */
 .grid-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -309,4 +219,9 @@ figcaption {
 .grid-item {
     text-align: center;
     color: black;
+}
+
+/* social-media */
+.social-media {
+    text-decoration: none;
 }

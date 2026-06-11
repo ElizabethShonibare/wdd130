@@ -1,19 +1,26 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
-    border: 2px solid black;
     border-radius: 1rem;
     background-color: royalblue;
     color: var(--accent2-color);
-
-}
-
-.logo img {
-    border-radius: 1rem;
-    width: 120px;
-    height: auto;
 
 }
 
@@ -21,6 +28,18 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    max-width: 1000px;
+    height: auto;
+    padding: 20px;
+    line-height: 1.6;
+    margin: 0 auto;
+    font-size: larger;
+    align-content: center;
 }
 
 footer {
@@ -36,6 +55,15 @@ footer {
 
 }
 
+/* logo */
+.logo img {
+    border-radius: 1rem;
+    width: 120px;
+    height: auto;
+
+}
+
+/* nav section */
 .nav {
     display: flex;
     gap: 10px;
@@ -53,28 +81,14 @@ footer {
 }
 
 .nav a:hover {
-    background-color: #7af8de;
+    background-color: darkmagenta;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    max-width: 1000px;
-    height: auto;
-    padding: 20px;
-    line-height: 1.6;
-    margin: 0 auto;
-    font-size: larger;
-    align-content: center;
-
+button:hover {
+    background-color: darkmagenta;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-}
-
+/* trip section */
 .trip-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -91,23 +105,7 @@ body {
     margin-top: 10px;
 }
 
-.cta {
-    text-align: center;
-    background: #e0f7fa;
-    padding: 20px;
-}
-
-.btn {
-    background: #0077b6;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-}
-
-.social-media a {
-    text-decoration: none;
-}
-
+/* table section */
 .box {
     background: white;
     padding: 20px;
@@ -131,4 +129,9 @@ td {
 th {
     background-color: royalblue;
     color: white;
+}
+
+/* social media  */
+.social-media a {
+    text-decoration: none;
 }
