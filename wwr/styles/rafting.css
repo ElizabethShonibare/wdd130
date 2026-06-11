@@ -26,11 +26,10 @@ header {
     justify-content: space-between;
     align-items: var(--align-items);
     flex-wrap: wrap;
-    /* border: 2px solid black; */
     border-radius: 1rem;
     background-color: var(--secondary-color);
     color: var(--accent2-color);
-    padding: 15px 25px;
+    padding: 1px;
 }
 
 body {
@@ -68,15 +67,6 @@ article {
 }
 
 /* headings */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    background-color: var(--accent2-color);
-    text-align: var(--text-align);
-    border: 30px;
-}
-
 h1 {
     position: absolute;
     top: 10px;
@@ -85,6 +75,14 @@ h1 {
     text-align: var(--text-align);
     color: #fff;
     border-radius: 1rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    text-align: var(--text-align);
+    border: 30px;
 }
 
 /* logo */
@@ -138,8 +136,6 @@ h1 {
     font-size: 28px;
     font-family: Arial, sans-serif;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .hero h2 {
