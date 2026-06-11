@@ -15,10 +15,8 @@
     box-sizing: border-box;
 }
 
-header,
-body,
-footer {
-    min-width: 200px;
+main {
+    max-width: 840px;
 }
 
 header {
